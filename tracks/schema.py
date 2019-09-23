@@ -70,7 +70,7 @@ class UpdateTrack(graphene.Mutation):
         user = info.context.user
         track = Track.objects.get(id=track_id)
 
-        if track.posted_by != user:
+        if track.posted_by and track.posted_by != user:
             raise GraphQLError('Not permitted to update this track.')
 
         track.title = title
