@@ -2,3 +2,4 @@ venv/
 .idea/
 .git/
 *.sqlite
+__pycache__/
