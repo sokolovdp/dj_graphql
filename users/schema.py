@@ -14,8 +14,8 @@ class Query(graphene.ObjectType):
     user = graphene.Field(UserType, id=graphene.Int(required=True))
     me = graphene.Field(UserType)
 
-    def resolve_user(self, info, id):
-        return get_user_model().objects.get(id=id)
+    def resolve_user(self, info, id_):
+        return get_user_model().objects.get(id=id_)
 
     def resolve_me(self, info):
         user = info.context.user
