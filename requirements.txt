@@ -5,7 +5,7 @@ graphene==2.1.8
 graphene-django==2.6.0
 graphql-core==2.2.1
 graphql-relay==2.0.0
-Jinja2==2.10.1
+Jinja2==2.11.3
 MarkupSafe==1.1.1
 promise==2.2.1
 PyJWT==1.7.1
